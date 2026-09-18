@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import { db } from "@/lib/supabase";
 import { CLUES, INTRO, REVEAL } from "@/data/game";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export async function GET(
   _: Request,
   { params }: { params: { code: string } }
