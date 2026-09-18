@@ -87,6 +87,10 @@ export default function Host({ params }: { params: { code: string } }) {
           Игроки {players.length}/3
         </h2>
 
+        <p style={{ wordBreak: "break-all", fontSize: "12px" }}>
+  DEBUG: {JSON.stringify(d.players)}
+</p>
+ 
         {players.length === 0 && (
           <p>Игроки пока не подключены.</p>
         )}
